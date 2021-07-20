@@ -19,12 +19,11 @@
 .Navbar-page a {
   color: #fff;
   text-decoration: none;
-  transition: border-bottom 200ms, font-weight 200ms;
+  font-weight: 300;
 }
 
 .Navbar-page a:hover, .Active {
-  border-bottom: solid #fff 2px;
-  font-weight: 500;
+  color: #f0f0f0;
 }
 
 .Toggle-button, .Menu-icon {

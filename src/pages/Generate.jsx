@@ -6,9 +6,12 @@ class GeneratePage extends Component {
   render() {
     return (
       <div className="Generate-wrapper">
-        <h1 className="Generate-header">
-          {"Generate a new playlist based on a favorite song or artist."}
+        <h1>
+          {"Generate"}
         </h1>
+        <p>
+          {"Create a new playlist based on a favorite song or artist."}
+        </p>
         <SearchBar />
         <div className="Generate-container">
           <h1>This is the generate page.</h1>

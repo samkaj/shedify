@@ -2,7 +2,7 @@
   grid-column-start: 2;
   grid-column-end: 6;
   color: #fff;
-  padding-top: 10%;
+  padding-top: 30px;
 }
 
 .Welcome-header {
@@ -11,7 +11,7 @@
 }
 .Welcome-text {
   margin: 0 0 10px 0;
-  font-size: 36px;
+  font-size: 26px;
 }
 
 .Signin-button {
@@ -40,11 +40,12 @@
 
   .Welcome-header {
     font-size: 30px;
-    margin-bottom: 0;
+    margin-top: 30px;
   }
 
   .Welcome-text {
     font-size: 18px;
+    padding: 0 4px 0 4px;
   }
 
   .Signin-container {
