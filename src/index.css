@@ -15,3 +15,8 @@ code {
 h1 {
   font-weight: 500;
 }
+
+p {
+  font-family: 'Nunito';
+  font-weight: 300;
+}
