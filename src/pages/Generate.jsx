@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import "../stylesheet/Generate.css"
+import "../stylesheet/Generate.css";
 import SearchBar from '../components/Searchbar';
+import SettingsPanel from '../components/SettingsPanel';
+import PlaylistPanel from '../components/PlaylistPanel';
 
 class GeneratePage extends Component {
   render() {
@@ -14,7 +16,8 @@ class GeneratePage extends Component {
         </p>
         <SearchBar />
         <div className="Generate-container">
-          <h1>This is the generate page.</h1>
+          <PlaylistPanel />
+          <SettingsPanel />
         </div>
       </div>
     );

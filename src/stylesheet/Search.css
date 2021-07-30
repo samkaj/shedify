@@ -3,13 +3,13 @@
   grid-template-columns: 4fr 1fr;
   margin: auto;
   background-color: #fff;
-  width: 600px;
+  width: 97%;
   height: 55px;
   position: relative;
 }
 
 .Search-container, .SearchCategory-dropdown {
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +36,8 @@
   top: 13.5px;
   left: 50px;
   width: 90%;
-  border-right: 2px solid #9095A6;
+  font-weight: 300;
+  font-family: 'Inter';
 }
 
 .SearchField-input:focus, .Submit-button:focus{
@@ -68,6 +69,9 @@ a, li {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   right: 18px;
+  border-left: 2px solid #9095A6;
+  padding-left: 20px;
+  width: 50px;
 }
 
 .SearchCategory-container a:hover, .Expand-button:hover {
@@ -87,15 +91,21 @@ a, li {
   list-style-type: none;
   text-align: left;
   padding-left: 0;
+  width: 130px;
+  float: right;
 }
 
-
-
-
 .SearchCategory-dropdown li{
-  padding: 3px 0 3px 0;
+  padding: 6px 0 6px 18px;
   margin: auto;
-  padding: 8px;
+}
+
+.SearchCategory-dropdown li:first-child {
+  border-radius: 20px 20px 0 0;
+}
+
+.SearchCategory-dropdown li:last-child {
+  border-radius: 0 0 20px 20px;
 }
 
 .SearchCategory-dropdown li:hover {

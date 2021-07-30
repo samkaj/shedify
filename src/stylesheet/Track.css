@@ -1,0 +1,35 @@
+.Track-container {
+  border-top: solid 1px #d9dde9;
+}
+
+div.Track-container > * {
+  margin: 5px;
+}
+
+.Track-container img {
+  float: left;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+}
+
+.Track-info-wrapper {
+  padding-top: 0;
+}
+
+.Track-container h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.Track-container h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  float: left;
+}
+
+#SongLength {
+  float: right;
+}

@@ -13,6 +13,11 @@ import SharePage from "./pages/Share"
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {apiResponse : "" };
+  }
+
   render() {
     return (
       <Router>
