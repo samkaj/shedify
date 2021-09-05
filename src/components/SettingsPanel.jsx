@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import "../stylesheet/Generate.css";
 
 class SettingsPanel extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div className="Generate-settings">

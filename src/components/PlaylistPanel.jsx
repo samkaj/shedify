@@ -4,10 +4,6 @@ import "../stylesheet/Generate.css";
 import "../stylesheet/Track.css";
 
 class PlaylistPanel extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div className="Generate-results">
