@@ -1,11 +1,12 @@
 /* Desktop */
 .Navbar-body {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 1fr;
   height: 72px;
 }
 .Navbar-pages {
   grid-column-start: 2;
+  grid-column-end: 6;
   list-style: none;
   padding: 0;
 }
@@ -14,6 +15,7 @@
   padding-right: 20px;
   font-size: 24px;
   text-decoration: none;
+  float: left;
 }
 
 .Navbar-page a {
@@ -28,6 +30,29 @@
 
 .Toggle-button, .Menu-icon {
   display: none;
+}
+
+.Navbar-signin-button {
+  border: 1px solid #fff;
+  border-radius: 7px;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 7px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+
+  float: right;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.Navbar-signin-button:hover {
+  background-color: #fff;
+  color: #34363E;
 }
 
 /* Mobile */
