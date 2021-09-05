@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar pages={['Start', 'Generate', 'Share']} />
+        <Navbar pages={['Start', 'Generate', 'Share']} spotifyAuthURL={this.state.spotifyAuthURL} />
         <div className="Container">
           <Switch>
             <Route exact path="/">
