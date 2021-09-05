@@ -15,7 +15,16 @@ import SharePage from "./pages/Share"
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {apiResponse : "" };
+    this.state = {spotifyAuthURL: ''};
+    this.setAuthURL = this.setAuthURL.bind(this);
+    this.setAuthURL();
+  }
+
+  setAuthURL() {
+    fetch('http://localhost:8888/login')
+      .then(res => res.text())
+      .then(res => this.setState({spotifyAuthURL: res}))
+      .catch(e => console.log(e));
   }
 
   render() {
@@ -25,7 +34,7 @@ class App extends Component {
         <div className="Container">
           <Switch>
             <Route exact path="/">
-              <StartPage />
+              <StartPage spotifyAuthURL={this.state.spotifyAuthURL} />
             </Route>
 
             <Route path="/Generate">
@@ -35,7 +44,6 @@ class App extends Component {
             <Route path="/Share">
               <SharePage />
             </Route>
-
           </Switch>
         </div>
       </Router>

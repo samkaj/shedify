@@ -12,19 +12,33 @@ class StartPage extends Component {
           {"Want to discover new artists, generate new playlists, or share your current favorites? It’s easy."}
         </p>
         <div className="Signin-container">
-          <SignInButton />
+          <SignInButton spotifyAuthURL={this.props.spotifyAuthURL} />
         </div>
       </div>
     );
   }
 }
 
-function SignInButton() {
-  return (
-    <button className="Signin-button">
-      Sign in with Spotify
-    </button>
-  );
+class SignInButton extends Component {
+  constructor(props) {
+    super();
+    this.openLoginPage = this.openLoginPage.bind(this);
+  }
+
+  openLoginPage() {
+    window.open(this.props.spotifyAuthURL);
+  }
+
+  render() {
+    return (
+      <div>
+      <button className="Signin-button" onClick={this.openLoginPage}> 
+        Sign in with Spotify
+      </button>
+      <p>{this.props.spotifyAuthURL}</p>
+      </div>
+    );
+  }
 }
 
 export default StartPage;
