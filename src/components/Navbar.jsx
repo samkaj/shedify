@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import SignInButton from './SignInButton';
 import "../stylesheet/Navbar.css";
 import close from "../img/close_black_24dp.svg";
 import menu from "../img/menu_white_24dp.svg";
@@ -40,6 +41,9 @@ class Navbar extends Component {
               <img alt={this.state.expanded ? "close menu icon" : "open menu icon"} className="Menu-icon" src={this.state.expanded ? close : menu} onClick={this.handleClick} />
             </li>
             {this.listItems}
+            <li>
+              <SignInButton className={'Navbar-signin-button'} spotifyAuthURL={this.props.spotifyAuthURL} />
+            </li>
           </ul>
         </div>
       </div>
